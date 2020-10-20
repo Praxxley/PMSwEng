@@ -17,7 +17,7 @@ Nachfolgend die Verdrahtung für einen Arduino Micro:
   7 = b
   8 = x
   9 = y
- 10 = start
+  10 = start
  11 = select
  
  Der Code nutzt die ArduinoJoystickLibrary.
