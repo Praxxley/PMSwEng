@@ -8,6 +8,7 @@ Das Gamepad besitzt über ein Steuerkreuz, vier Buttons (a, b, x, y) und je eine
 Als Mikrokontroller wird ein ATMega 32u4 verwendet. Mit leichten anpassungen sollte es aber auch auf dem ATMega 32u2 lauffäig sein.
 
 Nachfolgend die Verdrahtung für einen Arduino Micro:
+
   2 = auf
   3 = rechts
   4 = runter
