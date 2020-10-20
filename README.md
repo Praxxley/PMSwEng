@@ -9,16 +9,16 @@ Als Mikrokontroller wird ein ATMega 32u4 verwendet. Mit leichten anpassungen sol
 
 Nachfolgend die Verdrahtung für einen Arduino Micro:
 
-  2 = auf
-  3 = rechts
-  4 = runter
-  5 = links
-  6 = a
-  7 = b
-  8 = x
-  9 = y
-  10 = start
- 11 = select
+2 = auf
+3 = rechts
+4 = runter
+5 = links
+6 = a
+7 = b
+8 = x
+9 = y
+10 = start
+11 = select
  
  Der Code nutzt die ArduinoJoystickLibrary.
  Diese kann hier heruntergeladen werden:  https://github.com/MHeironimus/ArduinoJoystickLibrary
