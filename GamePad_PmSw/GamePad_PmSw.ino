@@ -4,6 +4,7 @@
 // Andere Mikrokontrollerboards mit einem AtMega 32u4
 // Chip sollten auch funktionieren.
 //
+//
 // Pin Layout:
 //  2 = auf
 //  3 = rechts
