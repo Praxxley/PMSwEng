@@ -1,5 +1,5 @@
-/// @file
-
+/// @file 
+//! \brief Main arduino programm including the parameter-setup
 //--------------------------------------------------------------------
 // Pin Layout:
 //  2 = up
@@ -15,13 +15,14 @@
 //
 // Lea Bernhardsgrütter
 // 06.12.2020
-//--------------------------------------------------------------------
-#include <Joystick.h>                                                       //!for all joystick button functions
-#include <TimerOne.h>                                                       //!for time interrupts
+///--------------------------------------------------------------------
+#include <Joystick.h>                                                       //for all joystick button functions
+#include <TimerOne.h>                                                       //for time interrupts
 
+                                                                            ///Enum of all used buttons
 namespace Button
 {
-                                                                           //!  Gamepad button names
+                                                                           //! \brief Set gamepad button names
   enum Button                                                              
   {
    up,
@@ -37,9 +38,9 @@ namespace Button
    numberOfButtons
   };
 }
-namespace ButtonPin 
+namespace ButtonPin                                                         ///  Allocates button names to pins
 {
-  enum ButtonPin                                                            //!  Allocate button names to pins
+  enum ButtonPin                                                            //!  Allocates button names to pins
   {
    up = 2,
    down = 4,
@@ -55,7 +56,7 @@ namespace ButtonPin
 }
 
 const int getButtonPin[Button::numberOfButtons] =                          //!built a array with all states of buttons
-{                                                                          //!keep the same order as enum ButtonPin
+{                                                                          // keep the same order as enum ButtonPin
   ButtonPin::up,
   ButtonPin::down,
   ButtonPin::left,
@@ -68,20 +69,20 @@ const int getButtonPin[Button::numberOfButtons] =                          //!bu
   ButtonPin::select
 };
 
-Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID,JOYSTICK_TYPE_GAMEPAD,
+Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID,JOYSTICK_TYPE_GAMEPAD,        
   6, 0,                                                                     //number of buttons, nuber of hat switch
   true, true, false,                                                        //Lx, Ly, Lz axis
   false, false, false,                                                      //no Rx, Ry, Rz axis
   false, false,                                                             //no rudder, throttle
   false, false, false);                                                     //no accelerator, brake, steering
 
-                                                                            //!  Entry point of the program
+
 void setup()
 {
   // put your setup code here, to run once:
   for (int i = 0; i < Button::numberOfButtons; ++i)
   {
-    pinMode(getButtonPin[i], INPUT_PULLUP);                                 //set all pins for buttons as input with pullup  
+    pinMode(getButtonPin[i], INPUT_PULLUP);                                 //!all pins are setup for buttons as input with pullup  
   }
   
   // Joystick Library initialisieren
@@ -93,12 +94,12 @@ void setup()
   Timer1.attachInterrupt(callback);                                         //attaches callback() as a timer overflow interrupt
 }
 
-void loop() 
+void loop()                                                                 /// emty runtime loop, the arduino waits for interrupt
 {
  
 }
 
-void callback() 
+void callback()                                                             /// the Interrupt-routine in case of a pressed button
 {
   static int presentState[Button::numberOfButtons] = {0};                   //present states saved for every button
   static int lastState[Button::numberOfButtons] = {0};                      //last states saved for every button
