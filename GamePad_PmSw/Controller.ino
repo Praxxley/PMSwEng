@@ -1,3 +1,5 @@
+/// @file
+
 //--------------------------------------------------------------------
 // Pin Layout:
 //  2 = up
@@ -19,6 +21,7 @@
 
 namespace Button
 {
+  //! \brief Gamepad buttons
   enum Button                                                               //name all buttons 
   {
    up,
@@ -72,6 +75,7 @@ Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID,JOYSTICK_TYPE_GAMEPAD,
   false, false,                                                             //no rudder, throttle
   false, false, false);                                                     //no accelerator, brake, steering
 
+//! \brief Entry point of the program
 void setup()
 {
   // put your setup code here, to run once:
