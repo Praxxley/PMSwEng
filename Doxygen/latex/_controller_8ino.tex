@@ -2,11 +2,16 @@
 \label{_controller_8ino}\index{C:/Users/User/Documents/HSR/HS2020/PmsnWmsn/Projekt/code/PMSwEng/GamePad\_PmSw/Controller.ino@{C:/Users/User/Documents/HSR/HS2020/PmsnWmsn/Projekt/code/PMSwEng/GamePad\_PmSw/Controller.ino}}
 {\ttfamily \#include $<$Joystick.\+h$>$}\newline
 {\ttfamily \#include $<$Timer\+One.\+h$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_button}{Button}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{_controller_8ino_a5f4f27568469187fa109ae4580fb38ef}\label{_controller_8ino_a5f4f27568469187fa109ae4580fb38ef}} 
-enum \mbox{\hyperlink{_controller_8ino_a5f4f27568469187fa109ae4580fb38ef}{Button\+::\+Button}} \{ \newline
+\mbox{\Hypertarget{namespace_button_a5f4f27568469187fa109ae4580fb38ef}\label{namespace_button_a5f4f27568469187fa109ae4580fb38ef}} 
+enum \mbox{\hyperlink{namespace_button_a5f4f27568469187fa109ae4580fb38ef}{Button\+::\+Button}} \{ \newline
 {\bfseries up}, 
 {\bfseries down}, 
 {\bfseries left}, 
@@ -21,9 +26,9 @@ enum \mbox{\hyperlink{_controller_8ino_a5f4f27568469187fa109ae4580fb38ef}{Button
 {\bfseries select}, 
 {\bfseries number\+Of\+Buttons}
  \}
-\begin{DoxyCompactList}\small\item\em Gamepad buttons. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gamepad button names. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{_controller_8ino_a0e09459dbfbe576a84bbc637d161cc89}\label{_controller_8ino_a0e09459dbfbe576a84bbc637d161cc89}} 
-enum {\bfseries Button\+Pin} \{ \newline
+enum \mbox{\hyperlink{_controller_8ino_a0e09459dbfbe576a84bbc637d161cc89}{Button\+Pin\+::\+Button\+Pin}} \{ \newline
 {\bfseries up} = 2, 
 {\bfseries down} = 4, 
 {\bfseries left} = 5, 
@@ -37,7 +42,7 @@ enum {\bfseries Button\+Pin} \{ \newline
 {\bfseries start} = 10, 
 {\bfseries select} = 11
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Allocate button names to pins. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -50,7 +55,8 @@ void \mbox{\hyperlink{_controller_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup}
 \mbox{\Hypertarget{_controller_8ino_afe461d27b9c48d5921c00d521181f12f}\label{_controller_8ino_afe461d27b9c48d5921c00d521181f12f}} 
 void {\bfseries loop} ()
 \item 
-void \mbox{\hyperlink{_controller_8ino_a6a8cb702d8916519818b4b860d2218f6}{callback}} ()
+\mbox{\Hypertarget{_controller_8ino_a6a8cb702d8916519818b4b860d2218f6}\label{_controller_8ino_a6a8cb702d8916519818b4b860d2218f6}} 
+void {\bfseries callback} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -58,15 +64,6 @@ void \mbox{\hyperlink{_controller_8ino_a6a8cb702d8916519818b4b860d2218f6}{callba
 const int {\bfseries get\+Button\+Pin} \mbox{[}Button\+::number\+Of\+Buttons\mbox{]}
 \end{DoxyCompactItemize}
 
-
-\doxysubsection{Function Documentation}
-\mbox{\Hypertarget{_controller_8ino_a6a8cb702d8916519818b4b860d2218f6}\label{_controller_8ino_a6a8cb702d8916519818b4b860d2218f6}} 
-\index{Controller.ino@{Controller.ino}!callback@{callback}}
-\index{callback@{callback}!Controller.ino@{Controller.ino}}
-\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
-{\footnotesize\ttfamily void callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-present states saved for every button
 
 \doxysubsection{Variable Documentation}
 \mbox{\Hypertarget{_controller_8ino_a57cce78f69a1adcdcaf6d05c3709ccee}\label{_controller_8ino_a57cce78f69a1adcdcaf6d05c3709ccee}} 

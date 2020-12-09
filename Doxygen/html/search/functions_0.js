@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['callback_5',['callback',['../_controller_8ino.html#a6a8cb702d8916519818b4b860d2218f6',1,'Controller.ino']]]
+  ['setup_6',['setup',['../_controller_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'Controller.ino']]]
 ];

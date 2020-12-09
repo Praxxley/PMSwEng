@@ -66,6 +66,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -76,9 +77,14 @@ $(function() {
 <div class="textblock"><code>#include &lt;Joystick.h&gt;</code><br />
 <code>#include &lt;TimerOne.h&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_button"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_button.html">Button</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a5f4f27568469187fa109ae4580fb38ef"><td class="memItemLeft" align="right" valign="top"><a id="a5f4f27568469187fa109ae4580fb38ef"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8ino.html#a5f4f27568469187fa109ae4580fb38ef">Button::Button</a> { <br />
+<tr class="memitem:a5f4f27568469187fa109ae4580fb38ef"><td class="memItemLeft" align="right" valign="top"><a id="a5f4f27568469187fa109ae4580fb38ef"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_button.html#a5f4f27568469187fa109ae4580fb38ef">Button::Button</a> { <br />
 &#160;&#160;<b>up</b>, 
 <b>down</b>, 
 <b>left</b>, 
@@ -94,9 +100,9 @@ Enumerations</h2></td></tr>
 <b>numberOfButtons</b>
 <br />
  }</td></tr>
-<tr class="memdesc:a5f4f27568469187fa109ae4580fb38ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gamepad buttons. <br /></td></tr>
+<tr class="memdesc:a5f4f27568469187fa109ae4580fb38ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gamepad button names. <br /></td></tr>
 <tr class="separator:a5f4f27568469187fa109ae4580fb38ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e09459dbfbe576a84bbc637d161cc89"><td class="memItemLeft" align="right" valign="top"><a id="a0e09459dbfbe576a84bbc637d161cc89"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ButtonPin</b> { <br />
+<tr class="memitem:a0e09459dbfbe576a84bbc637d161cc89"><td class="memItemLeft" align="right" valign="top"><a id="a0e09459dbfbe576a84bbc637d161cc89"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8ino.html#a0e09459dbfbe576a84bbc637d161cc89">ButtonPin::ButtonPin</a> { <br />
 &#160;&#160;<b>up</b> = 2, 
 <b>down</b> = 4, 
 <b>left</b> = 5, 
@@ -111,6 +117,7 @@ Enumerations</h2></td></tr>
 <b>select</b> = 11
 <br />
  }</td></tr>
+<tr class="memdesc:a0e09459dbfbe576a84bbc637d161cc89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate button names to pins. <br /></td></tr>
 <tr class="separator:a0e09459dbfbe576a84bbc637d161cc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -125,7 +132,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_con
 <tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top"><a id="afe461d27b9c48d5921c00d521181f12f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> ()</td></tr>
 <tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8cb702d8916519818b4b860d2218f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8ino.html#a6a8cb702d8916519818b4b860d2218f6">callback</a> ()</td></tr>
+<tr class="memitem:a6a8cb702d8916519818b4b860d2218f6"><td class="memItemLeft" align="right" valign="top"><a id="a6a8cb702d8916519818b4b860d2218f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b> ()</td></tr>
 <tr class="separator:a6a8cb702d8916519818b4b860d2218f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -133,25 +141,6 @@ Variables</h2></td></tr>
 <tr class="memitem:a57cce78f69a1adcdcaf6d05c3709ccee"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><b>getButtonPin</b> [Button::numberOfButtons]</td></tr>
 <tr class="separator:a57cce78f69a1adcdcaf6d05c3709ccee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a6a8cb702d8916519818b4b860d2218f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a8cb702d8916519818b4b860d2218f6">&#9670;&nbsp;</a></span>callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void callback </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>present states saved for every button</p>
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a57cce78f69a1adcdcaf6d05c3709ccee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57cce78f69a1adcdcaf6d05c3709ccee">&#9670;&nbsp;</a></span>getButtonPin</h2>

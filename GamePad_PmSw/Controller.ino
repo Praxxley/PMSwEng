@@ -16,13 +16,13 @@
 // Lea Bernhardsgrütter
 // 06.12.2020
 //--------------------------------------------------------------------
-#include <Joystick.h>                                                       //for all joystick button functions
-#include <TimerOne.h>                                                       //for time interrupts
+#include <Joystick.h>                                                       //!for all joystick button functions
+#include <TimerOne.h>                                                       //!for time interrupts
 
 namespace Button
 {
-  //! \brief Gamepad buttons
-  enum Button                                                               //name all buttons 
+                                                                           //!  Gamepad button names
+  enum Button                                                              
   {
    up,
    down,
@@ -39,7 +39,7 @@ namespace Button
 }
 namespace ButtonPin 
 {
-  enum ButtonPin                                                            //allocate button names to pins
+  enum ButtonPin                                                            //!  Allocate button names to pins
   {
    up = 2,
    down = 4,
@@ -54,8 +54,8 @@ namespace ButtonPin
   };
 }
 
-const int getButtonPin[Button::numberOfButtons] =                          //built a array with all states of buttons
-{                                                                          //keep the same order as enum ButtonPin
+const int getButtonPin[Button::numberOfButtons] =                          //!built a array with all states of buttons
+{                                                                          //!keep the same order as enum ButtonPin
   ButtonPin::up,
   ButtonPin::down,
   ButtonPin::left,
@@ -75,7 +75,7 @@ Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID,JOYSTICK_TYPE_GAMEPAD,
   false, false,                                                             //no rudder, throttle
   false, false, false);                                                     //no accelerator, brake, steering
 
-//! \brief Entry point of the program
+                                                                            //!  Entry point of the program
 void setup()
 {
   // put your setup code here, to run once:
