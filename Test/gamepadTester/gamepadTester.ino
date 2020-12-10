@@ -34,6 +34,7 @@ void setup()
     pinMode(i,OUTPUT);
     digitalWrite(i,HIGH);
   }
+  // opens serial port, sets data rate to 9600 bps
   Serial.begin(9600);
 }
 
