@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pmsweng_10',['PMSwEng',['../md__c___users__user__documents__h_s_r__h_s2020__pmsn_wmsn__projekt_code__p_m_sw_eng__r_e_a_d_m_e.html',1,'']]]
+  ['setup_10',['setup',['../_controller_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;Controller.ino'],['../gamepad_tester_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;gamepadTester.ino']]]
 ];
