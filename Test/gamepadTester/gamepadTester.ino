@@ -3,7 +3,7 @@
 
 ///--------------------------------------------------------------------           
 /// @file
-/// \brief Hardwaretest für das Gamepad aus dem PmSwEng-Projekt                   
+/// \brief Hardware test for the gamepad from the PmSwEng project                   
 ///
 /// Nachfolgend die Funktionen:                                                   \n
 /// u - up                                                                        \n
