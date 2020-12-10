@@ -1,26 +1,33 @@
-//--------------------------------------------------------------------
-// Hardwaretest für das Gamepad aus dem PmSwEng-Projekt
-// Nachfolgend die Funktionen:
-// u - up
-// d - down
-// l - left
-// r - right
-// a - a
-// b - b
-// x - x
-// y - y
-// s - start
-// S - select
-// 1 - automatische testsequenz
-// Jedes Kommando emuliert einen Tastendruck für zwei Sekunden.
-//
-// David Feldmann
-// 09.12.2020
-//--------------------------------------------------------------------
 
+
+
+///--------------------------------------------------------------------           
+/// @file
+/// \brief Hardwaretest für das Gamepad aus dem PmSwEng-Projekt                   
+///
+/// Nachfolgend die Funktionen:                                                   \n
+/// u - up                                                                        \n
+/// d - down                                                                      \n
+/// l - left                                                                      \n
+/// r - right                                                                     \n
+/// a - a                                                                         \n
+/// b - b                                                                         \n  
+/// x - x                                                                         \n
+/// y - y                                                                         \n
+/// s - start                                                                     \n
+/// S - select                                                                    \n  
+/// 1 - automatische testsequenz                                                  \n  
+/// Jedes Kommando emuliert einen Tastendruck für zwei Sekunden.                  \n
+///                                                                               \n
+/// David Feldmann                                                                \n
+/// 09.12.2020                                                                     
+//--------------------------------------------------------------------           
+
+/// The buffer stores the recived strng
 String buff;
 
-void setup()
+/// configure the arduino output-pins and the serial port
+void setup()                                        
 {
   for(int i=2; i<12; i++)
   {
@@ -30,18 +37,24 @@ void setup()
   Serial.begin(9600);
 }
 
+///\brief emulates a active button for 2sec.
+///\param pinNumber Which pin schould be tested
 void emulateButton(byte pinNumber)
 {
   digitalWrite(pinNumber,LOW);
   delay(2000);
   digitalWrite(pinNumber,HIGH);
 }
-
+///\brief The main loop of the Arduino
+///
+/// recives the command via seral port and excecutes the corresponding case.
+///
+///
 void loop()
 {
   if(Serial.available()>0)
   {
-     buff=Serial.readStringUntil('\n');
+     buff=Serial.readStringUntil('\n');   
      Serial.println(buff);
      switch(buff[0])
      {

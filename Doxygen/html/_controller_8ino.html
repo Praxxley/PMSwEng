@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PMSwEng: C:/Users/User/Documents/HSR/HS2020/PmsnWmsn/Projekt/code/PMSwEng/GamePad_PmSw/Controller.ino File Reference</title>
+<title>Gamepad: C:/Users/User/Documents/HSR/HS2020/PmsnWmsn/Projekt/code/PMSwEng/GamePad_PmSw/Controller.ino File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">PMSwEng
+   <div id="projectname">Gamepad
    </div>
+   <div id="projectbrief">Projekt zum Modul Projektmanagement und Softwareengineering an der RJ-Ost (HSR).</div>
   </td>
  </tr>
  </tbody>
@@ -134,13 +135,9 @@ Joystick_&#160;</td><td class="memItemRight" valign="bottom"><b>Joystick</b> (JO
 <tr class="separator:af8d58bcfa01734b15e780533eca9ec64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
 <tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top"><a id="afe461d27b9c48d5921c00d521181f12f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
-<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">emty runtime loop, the arduino waits for interrupt <br /></td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
 <tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8cb702d8916519818b4b860d2218f6"><td class="memItemLeft" align="right" valign="top"><a id="a6a8cb702d8916519818b4b860d2218f6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8ino.html#a6a8cb702d8916519818b4b860d2218f6">callback</a> ()</td></tr>
-<tr class="memdesc:a6a8cb702d8916519818b4b860d2218f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">the Interrupt-routine in case of a pressed button <br /></td></tr>
+<tr class="memitem:a6a8cb702d8916519818b4b860d2218f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_controller_8ino.html#a6a8cb702d8916519818b4b860d2218f6">callback</a> ()</td></tr>
 <tr class="separator:a6a8cb702d8916519818b4b860d2218f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -150,7 +147,61 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main arduino programm including the parameter-setup. </p>
+<p>Pin Layout: <br  />
+ 2 = up <br  />
+ 3 = right <br  />
+ 4 = down <br  />
+ 5 = left <br  />
+ <br  />
+ 6 = a <br  />
+ 7 = b <br  />
+ 8 = x <br  />
+ 9 = y <br  />
+ <br  />
+ 10 = start <br  />
+ <br  />
+ 11 = select <br  />
+ Lea Bernhardsgrütter <br  />
+ <br  />
+ 06.12.2020 <br  />
+ </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a6a8cb702d8916519818b4b860d2218f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8cb702d8916519818b4b860d2218f6">&#9670;&nbsp;</a></span>callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void callback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the Interrupt-routine in case of a pressed button</p>
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>emty runtime loop, the arduino waits for interrupt</p>
+
+</div>
+</div>
 <a id="a4fc01d736fe50cf5b977f755b675f11d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&nbsp;</a></span>setup()</h2>
 
@@ -182,10 +233,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=                          </div>
-<div class="line">{                                                                          </div>
-<div class="line">  ButtonPin::up,</div>
-<div class="line">  ButtonPin::down,</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= </div>
+<div class="line">{</div>
+<div class="line">  ButtonPin::up,                                                           </div>
+<div class="line">  ButtonPin::down,                                                         </div>
 <div class="line">  ButtonPin::left,</div>
 <div class="line">  ButtonPin::right,</div>
 <div class="line">  ButtonPin::a,</div>

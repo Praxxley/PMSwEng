@@ -1,28 +1,29 @@
-/// @file 
-//! \brief Main arduino programm including the parameter-setup
 //--------------------------------------------------------------------
-// Pin Layout:
-//  2 = up
-//  3 = right
-//  4 = down
-//  5 = left
-//  6 = a
-//  7 = b
-//  8 = x
-//  9 = y
-// 10 = start
-// 11 = select
-//
-// Lea Bernhardsgrütter
-// 06.12.2020
-///--------------------------------------------------------------------
+/// @file 
+/// \brief Main arduino programm including the parameter-setup
+///
+/// Pin Layout:                                                       \n
+///  2 = up                                                           \n
+///  3 = right                                                        \n
+///  4 = down                                                         \n
+///  5 = left                                                         \n  
+///  6 = a                                                            \n
+///  7 = b                                                            \n
+///  8 = x                                                            \n
+///  9 = y                                                            \n  
+/// 10 = start                                                        \n  
+/// 11 = select                                                       \n
+///                                                                     
+/// Lea Bernhardsgrütter                                              \n  
+/// 06.12.2020                                                        
+//--------------------------------------------------------------------
 #include <Joystick.h>                                                       //for all joystick button functions
 #include <TimerOne.h>                                                       //for time interrupts
 
                                                                             ///Enum of all used buttons
 namespace Button
 {
-                                                                           //! \brief Set gamepad button names
+                                                                            //! \brief Set gamepad button names
   enum Button                                                              
   {
    up,
@@ -55,10 +56,10 @@ namespace ButtonPin                                                         /// 
   };
 }
 
-const int getButtonPin[Button::numberOfButtons] =                          //!built a array with all states of buttons
-{                                                                          // keep the same order as enum ButtonPin
-  ButtonPin::up,
-  ButtonPin::down,
+const int getButtonPin[Button::numberOfButtons] = 
+{
+  ButtonPin::up,                                                           //built a array with all states of buttons
+  ButtonPin::down,                                                         // keep the same order as enum ButtonPin
   ButtonPin::left,
   ButtonPin::right,
   ButtonPin::a,
@@ -94,18 +95,18 @@ void setup()
   Timer1.attachInterrupt(callback);                                         //attaches callback() as a timer overflow interrupt
 }
 
-void loop()                                                                 /// emty runtime loop, the arduino waits for interrupt
-{
+void loop()                                                                 
+{                                                                           //! emty runtime loop, the arduino waits for interrupt
  
 }
 
-void callback()                                                             /// the Interrupt-routine in case of a pressed button
-{
+void callback()
+{                                                                           //! the Interrupt-routine in case of a pressed button
   static int presentState[Button::numberOfButtons] = {0};                   //present states saved for every button
   static int lastState[Button::numberOfButtons] = {0};                      //last states saved for every button
   static unsigned int lockStateChange[Button::numberOfButtons] = {0};       //used for software debouncing
   enum {lockTime = 10};
-
+         
   for(int i = 0; i < Button::numberOfButtons; ++i)
   {
     presentState[i] = !digitalRead(getButtonPin[i]);                        //active low buttons
