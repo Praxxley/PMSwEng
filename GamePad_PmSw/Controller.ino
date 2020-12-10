@@ -59,7 +59,7 @@ namespace ButtonPin                                                         /// 
 const int getButtonPin[Button::numberOfButtons] = 
 {
   ButtonPin::up,                                                           //built a array with all states of buttons
-  ButtonPin::down,                                                         // keep the same order as enum ButtonPin
+  ButtonPin::down,                                                         //it is important to keep the same order as enum ButtonPin
   ButtonPin::left,
   ButtonPin::right,
   ButtonPin::a,
