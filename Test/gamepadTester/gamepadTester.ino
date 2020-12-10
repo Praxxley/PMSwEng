@@ -5,7 +5,7 @@
 /// @file
 /// \brief Hardware test for the gamepad from the PmSwEng (project management and software engineering) project                   
 ///
-/// Nachfolgend die Funktionen:                                                   \n
+/// Below are the functions:                                                      \n
 /// u - up                                                                        \n
 /// d - down                                                                      \n
 /// l - left                                                                      \n
@@ -16,8 +16,8 @@
 /// y - y                                                                         \n
 /// s - start                                                                     \n
 /// S - select                                                                    \n  
-/// 1 - automatische testsequenz                                                  \n  
-/// Jedes Kommando emuliert einen Tastendruck für zwei Sekunden.                  \n
+/// 1 - test sequenceuenz                                                         \n  
+/// Each command emulates a keystroke for two seconds.                            \n
 ///                                                                               \n
 /// David Feldmann                                                                \n
 /// 09.12.2020                                                                     
