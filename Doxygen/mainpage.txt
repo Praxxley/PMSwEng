@@ -19,7 +19,10 @@
  *Der Code nutzt die ArduinoJoystickLibrary. Diese kann hier heruntergeladen werden: https://github.com/MHeironimus/ArduinoJoystickLibrary
  *
  *\section Test
- *Der Testcode ist darauf ausgelegt auf einem zweiten Arduino zu laufen, welcher Knopfdrücke emuliert
+ *Der Testcode ist darauf ausgelegt auf einem zweiten Arduino zu laufen, welcher Knopfdrücke emuliert. 
+ * \n 
+ *Der Test überprüft die Inputpins wie auch die umwandlung und übertragung des signales an den angeschlossenen PC.\n
+ * 
  *
  *
  *
