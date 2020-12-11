@@ -20,6 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Gamepad
    </div>
@@ -73,19 +74,29 @@ Introduction</h1>
  Als Mikrokontroller wird ein ATMega 32u4 verwendet. Mit leichten anpassungen sollte es aber auch auf dem ATMega 32u2 lauffäig sein.</p>
 <h1><a class="anchor" id="Software"></a>
 Software</h1>
-<p>Das Programm ist interruptbasiert, der Arduino wartet auf ein Knopfdruck. Geschiet dies wird er mit der ArduinoJoystickLibrary ein Signal an den angeschlossenen PC senden.</p>
+<p>Das Programm ist interruptbasiert, der Arduino wartet auf ein Knopfdruck. Geschiet dies wird er mit der ArduinoJoystickLibrary ein Signal an den angeschlossenen PC senden. <br  />
+Code Dokumentation: <a class="el" href="_controller_8ino.html" title="Main arduino programm including the parameter-setup.">Controller.ino</a></p>
 <h2><a class="anchor" id="Libraries"></a>
 Libraries</h2>
 <p>Der Code nutzt die ArduinoJoystickLibrary. Diese kann hier heruntergeladen werden: <a href="https://github.com/MHeironimus/ArduinoJoystickLibrary">https://github.com/MHeironimus/ArduinoJoystickLibrary</a></p>
 <h1><a class="anchor" id="hardware_sec"></a>
 Hardware</h1>
 <p>Nachfolgend die Verdrahtung für einen Arduino Micro: <br  />
-2 = auf 3 = rechts 4 = runter 5 = links 6 = a 7 = b 8 = x 9 = y 10 = start 11 = select</p>
+2 = auf<br  />
+ 3 = rechts<br  />
+ 4 = runter<br  />
+ 5 = links<br  />
+ 6 = a<br  />
+ 7 = b<br  />
+ 8 = x<br  />
+ 9 = y<br  />
+ 10 = start<br  />
+ 11 = select</p>
 <h1><a class="anchor" id="Test"></a>
 Test</h1>
 <p>Der Testcode ist darauf ausgelegt, auf einem zweiten Arduino zu laufen, welcher Knopfdrücke emuliert. <br  />
  Der Test überprüft die Inputpins wie auch die umwandlung und übertragung des signales an den angeschlossenen PC.<br  />
-</p>
+Code Dokumentation: <a class="el" href="gamepad_tester_8ino.html" title="Hardware test for the gamepad from the PmSwEng (project management and software engineering) project">gamepadTester.ino</a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

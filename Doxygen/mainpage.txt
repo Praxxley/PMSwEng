@@ -11,6 +11,8 @@
  *
  *\section Software
  *Das Programm ist interruptbasiert, der Arduino wartet auf ein Knopfdruck. Geschiet dies wird er mit der ArduinoJoystickLibrary ein Signal an den angeschlossenen PC senden. 
+ *\n
+ *Code Dokumentation: Controller.ino
  *
  *\subsection Libraries
  *Der Code nutzt die ArduinoJoystickLibrary. Diese kann hier heruntergeladen werden: https://github.com/MHeironimus/ArduinoJoystickLibrary
@@ -18,14 +20,14 @@
  *\section hardware_sec Hardware
  *Nachfolgend die Verdrahtung für einen Arduino Micro:
  *\n
- *2 = auf 3 = rechts 4 = runter 5 = links 6 = a 7 = b 8 = x 9 = y 10 = start 11 = select
+ *2 = auf\n 3 = rechts\n 4 = runter\n 5 = links\n 6 = a\n 7 = b\n 8 = x\n 9 = y\n 10 = start\n 11 = select
  *
  *
  *\section Test
  *Der Testcode ist darauf ausgelegt, auf einem zweiten Arduino zu laufen, welcher Knopfdrücke emuliert. 
  * \n 
  *Der Test überprüft die Inputpins wie auch die umwandlung und übertragung des signales an den angeschlossenen PC.\n
- * 
+ *Code Dokumentation: gamepadTester.ino
  *
  *
  *
